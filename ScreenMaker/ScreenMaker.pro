@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-08-30T16:18:13
+# Project created by QtCreator 2019-08-31T09:36:23
 #
 #-------------------------------------------------
 
@@ -25,11 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        ledindicator.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        my_qlabel.cpp
 
 HEADERS += \
-        mainwindow.h
+        ledindicator.h \
+        mainwindow.h \
+        my_qlabel.h
 
 FORMS += \
         mainwindow.ui
