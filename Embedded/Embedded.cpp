@@ -1,9 +1,13 @@
-#include <Arduino.h>
+
+#include "Image.h"
+Image img;
 
 void setup() {
-int a;
+
 }
 
 void loop() {
-j
+img.handler();
+delay(16);
+
 }
