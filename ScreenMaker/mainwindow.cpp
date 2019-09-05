@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
 /*IMAGE IN BACKGROUND*/
-    QPixmap pix("C:\\Users\\rafae\\Documents\\ScreenMaker\\ScreenMaker\\quadro_teste_cortado.jpeg");
+    QPixmap pix("C:\\Users\\rafae\\Documents\\GitHub\\Flipperama\\ScreenMaker\\quadro_teste_cortado.jpeg");
     ui->label->setPixmap(pix);
 
 /*LOCAL LED*/
@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 /*CONFIGURATION SHALL BE COMMENTED LATER*/
     connect(ui->label, SIGNAL(Mouse_Pressed()),this,SLOT(PositionSelected()));
-    QFile file("C:\\Users\\rafae\\Documents\\ScreenMaker\\ScreenMaker\\text.txt");
+    QFile file("C:\\Users\\rafae\\Documents\\GitHub\\Flipperama\\ScreenMaker\\text.txt");
     QString content;
     if (file.open(QIODevice::Text | QIODevice::ReadOnly)) {
         QTextStream stream(&file);
