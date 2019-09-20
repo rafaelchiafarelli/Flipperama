@@ -5,6 +5,8 @@
 #include "ledindicator.h"
 #include <QTimer>
 
+#include "sequence.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -46,8 +48,12 @@ private slots:
 
     void on_speed_sliderMoved(int position);
 
+    void on_RecordButton_clicked();
+
 private:
-    LedIndicator *LED;
+    sequence *S;
+
+
     PosAndGroup pix[NUMPIXELS];
     QColor off;
     QColor on;

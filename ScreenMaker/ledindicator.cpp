@@ -51,6 +51,11 @@ void LedIndicator::setOnPattern(Qt::BrushStyle onPattern)
     ledOnPattern=onPattern;
     repaint();
 }
+void LedIndicator::setColor_noShow(QColor Color)
+{
+    ledOnColor=Color;
+    repaint();
+}
 void LedIndicator::setOffPattern(Qt::BrushStyle offPattern)
 {
     ledOffPattern=offPattern;

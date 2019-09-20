@@ -14,7 +14,7 @@ class LedIndicator: public QWidget {
     void setOnPattern(Qt::BrushStyle onPattern);
     void setOffPattern(Qt::BrushStyle offPattern);
     void setLedSize(int size);
-
+    void setColor_noShow(QColor Color);
     void setGroup(int g){group = g;}
     int getGroup(){return group;}
     QColor getOnColor(){return ledOnColor;}

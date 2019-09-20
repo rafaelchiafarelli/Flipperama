@@ -28,12 +28,20 @@ SOURCES += \
         ledindicator.cpp \
         main.cpp \
         mainwindow.cpp \
-        my_qlabel.cpp
+        my_qlabel.cpp \
+    sequence.cpp \
+    effects.cpp \
+    generate_bin.cpp
 
 HEADERS += \
         ledindicator.h \
         mainwindow.h \
-        my_qlabel.h
+        my_qlabel.h \
+    sequence.h \
+    bin.h \
+    config.h \
+    effects.h \
+    generate_bin.h
 
 FORMS += \
         mainwindow.ui

@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    S = new sequence(parent);
+
 
 /*IMAGE IN BACKGROUND*/
     QPixmap pix("C:\\Users\\rafae\\Documents\\GitHub\\Flipperama\\ScreenMaker\\quadro_teste_cortado.jpeg");
@@ -45,19 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
 /*GAME LED*/
-    LED = new LedIndicator[NUMPIXELS+1];
-    QColor white(255,255,255,255);
-    QColor black(0,0,0,0);
-    for(int i =0; i<NUMPIXELS; i++)
-    {
-        LED[i].setState(true);
-        LED[i].setOnColor(white);
-        LED[i].setOffColor(black);
-        LED[i].setParent(ui->label);
-        LED[i].setLedSize(27);
-        LED[i].setGroup(this->pix[i].g);
-        LED[i].move(this->pix[i].x,this->pix[i].y);
-    }
+
     ui->selectLED->setChecked(false);
     ui->selectGroup->setChecked(true);
 
@@ -72,61 +62,39 @@ MainWindow::~MainWindow()
 {
     delete ui;
 
-    delete LED;
 
+    T->stop();
+    while(T->isActive());
+    delete T;
     disconnect(ui->label, SIGNAL(Mouse_Pressed()),this,SLOT(PositionSelected()));
+
 }
 /*RED CONTOLLER*/
 
 
 void MainWindow::changeColorLED()
 {
-QColor c(ui->R_Color->value(),ui->G_Color->value(),ui->B_Color->value(),ui->A_slider->value());
-if(ui->selectLED->isChecked())
-{
-    LED[ui->led_number->value()].setOnColor(c);
-}
-if(ui->selectGroup->isChecked())
-{
-    for(int i=0;i<NUMPIXELS;i++)
-    {
-        if(this->LED[i].getGroup() == ui->group->value() )
-        {
-            this->LED[i].setOnColor(c);
-        }
-    }
-}
+
 }
 
 void MainWindow::on_R_Color_sliderMoved(int position)
 {
-    on.setRed(position);
-    ui->LED->setOnColor(on);
-    ui->LED->setState(true);
-    changeColorLED();
+
 }
 
 void MainWindow::on_G_Color_sliderMoved(int position)
 {
-    on.setGreen(position);
-    ui->LED->setOnColor(on);
-    ui->LED->setState(true);
-    changeColorLED();
+
 }
 
 void MainWindow::on_B_Color_sliderMoved(int position)
 {
-    on.setBlue(position);
-    ui->LED->setOnColor(on);
-    ui->LED->setState(true);
-    changeColorLED();
+
 }
 
 void MainWindow::on_A_slider_sliderMoved(int position)
 {
-    on.setAlpha(position);
-    ui->LED->setOnColor(on);
-    ui->LED->setState(true);
+
 }
 
 void MainWindow::PositionSelected()
@@ -176,13 +144,20 @@ void MainWindow::on_speed_sliderMoved(int position)
 
 void MainWindow::TimeFrame()
 {
-    LED[NUMPIXELS].setOnColor(LED[0].getOnColor());
-    for (int i = NUMPIXELS;i>0;i--)
-    {
-     LED[i].setOnColor(LED[i-1].getOnColor());
-    }
+
+    S->handler();
 }
 
+
+void MainWindow::on_RecordButton_clicked()
+{
+/*function to create the bin.h file that will be used by the embedded software*/
+
+    //lets generate...
+
+    //
+
+}
 
 
 

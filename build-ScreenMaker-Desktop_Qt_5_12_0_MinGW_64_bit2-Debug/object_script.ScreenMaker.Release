@@ -1,0 +1,11 @@
+release/ledindicator.o
+release/main.o
+release/mainwindow.o
+release/my_qlabel.o
+release/sequence.o
+release/effects.o
+release/generate_bin.o
+release/moc_ledindicator.o
+release/moc_mainwindow.o
+release/moc_my_qlabel.o
+release/moc_sequence.o

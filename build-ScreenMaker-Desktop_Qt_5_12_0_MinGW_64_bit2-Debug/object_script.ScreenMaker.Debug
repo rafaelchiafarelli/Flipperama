@@ -1,0 +1,11 @@
+debug/ledindicator.o
+debug/main.o
+debug/mainwindow.o
+debug/my_qlabel.o
+debug/sequence.o
+debug/effects.o
+debug/generate_bin.o
+debug/moc_ledindicator.o
+debug/moc_mainwindow.o
+debug/moc_my_qlabel.o
+debug/moc_sequence.o

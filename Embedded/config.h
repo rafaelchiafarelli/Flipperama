@@ -8,7 +8,7 @@
 #ifndef CONFIG_H_
 #define CONFIG_H_
 #define NUMPIXELS 116
-#define UINT8_T_MAX 255
+#define UINT8_T_MAX 254
 #define FPS 60
 #define GROUPS 10
 #define PIN 13
