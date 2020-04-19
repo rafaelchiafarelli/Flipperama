@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread  -rdynamic CMakeFiles/continuous.dir/continuous_raw_file_ramdisk.cpp.o  -o continuous  -L/usr/local/lib -Wl,-rpath,/usr/local/lib -lraspicam -lcurses -lraspicam -lcurses 

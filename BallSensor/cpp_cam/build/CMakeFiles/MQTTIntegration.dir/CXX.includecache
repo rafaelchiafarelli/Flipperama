@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/cpp_cam/MQTTIntegration.cpp
+MQTTIntegration.h
+/home/pi/cpp_cam/MQTTIntegration.h
+
+/home/pi/cpp_cam/MQTTIntegration.h
+mosquitto.h
+-
+iostream
+-
+string.h
+/home/pi/cpp_cam/string.h
+

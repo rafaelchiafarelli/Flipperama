@@ -1,0 +1,10 @@
+dbus-python==1.2.16
+decorator==4.4.2
+evento==1.0.2
+guizero==1.1.0
+omxplayer-wrapper==0.3.3
+paho-mqtt==1.5.0
+pathlib2==2.3.5
+pkg-resources==0.0.0
+PySimpleGUI==4.18.0
+six==1.14.0

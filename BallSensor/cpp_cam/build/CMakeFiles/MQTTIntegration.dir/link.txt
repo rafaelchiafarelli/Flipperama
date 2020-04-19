@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMQTTIntegration.a  CMakeFiles/MQTTIntegration.dir/MQTTIntegration.cpp.o
+/usr/bin/ranlib libMQTTIntegration.a

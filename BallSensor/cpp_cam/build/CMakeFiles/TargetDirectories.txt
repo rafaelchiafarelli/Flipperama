@@ -1,0 +1,8 @@
+/home/pi/cpp_cam/build/CMakeFiles/rebuild_cache.dir
+/home/pi/cpp_cam/build/CMakeFiles/edit_cache.dir
+/home/pi/cpp_cam/build/CMakeFiles/raw_ramdisk.dir
+/home/pi/cpp_cam/build/CMakeFiles/simpletest_raspicam.dir
+/home/pi/cpp_cam/build/CMakeFiles/continuous.dir
+/home/pi/cpp_cam/build/CMakeFiles/simple_cv.dir
+/home/pi/cpp_cam/build/CMakeFiles/EventROI.dir
+/home/pi/cpp_cam/build/CMakeFiles/Measure.dir
